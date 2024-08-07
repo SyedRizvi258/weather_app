@@ -1,6 +1,7 @@
 # Weather App (JavaScript) 
-- Developed a weather application that dynamically displays current weather data based on the user's location.
-- Implemented using the OpenWeatherMap API to fetch real-time weather information.
-- Utilized the HTML Geolocation API to request user location access.
-- After the user allows location access, the app will display the temperature, weather description and icon, and 
-location name.
+- Developed a dynamic weather application using JavaScript, displaying real-time weather data based on user location.
+- Utilized the OpenWeatherMap API to fetch and present current weather information, including temperature, weather 
+description, and location name.
+- Employed the HTML Geolocation API to request and use user location, enhancing the app’s usability and accuracy.
+- Designed an interactive user interface that allows users to toggle between Celsius and Fahrenheit, providing a 
+customizable user experience.
