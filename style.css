@@ -75,19 +75,19 @@ body {
 }
 
 .search-container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center elements horizontally */
-    margin: 20px 0; /* Add some margin above and below */
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; 
 }
 
 #city-input {
-    width: 200px; /* Set a fixed width for the input */
-    padding: 10px; /* Add padding for better touch targets */
-    border: 2px solid #293251; /* Border color */
-    border-radius: 5px; /* Slightly rounded corners */
-    font-size: 1em; /* Adjust font size */
-    outline: none; /* Remove default outline */
-    margin-right: 10px; /* Space between input and button */
+    width: 200px; 
+    padding: 10px; 
+    border: 2px solid #293251; 
+    border-radius: 5px;
+    font-size: 1em; 
+    outline: none; 
+    margin-right: 10px;
 }
 
 /* Change border color on focus */
