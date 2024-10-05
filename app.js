@@ -57,7 +57,7 @@ function getWeather(latitude, longitude) {
 
 // GET WEATHER BY CITY NAME
 function getWeatherByCity(city) {
-    let api = `${backendUrl}?city=${city}`; // Call your backend API
+    let api = `${backendUrl}?city=${city}`;
 
     fetch(api)
         .then(response => {
