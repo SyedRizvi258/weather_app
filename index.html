@@ -6,25 +6,21 @@
     <link rel="stylesheet" href="font/Rimouski.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
     <div class="container">
         <div class="app-title">
             <p>Weather</p>
         </div>
-        
-         <!-- Notification and Retry Button -->
          <div class="notification">
             <p></p>
             <button id="retry" style="display: none;">Retry</button>
         </div>
-
         <div class="search-container">
             <input type="text" id="city-input" placeholder="Enter city name">
             <button id="get-weather">Get Weather</button>
         </div>
-
-        <!-- Weather container contains: the icon, temperature value, temperature description, and location -->
+        <!-- Weather container contains: the icon, temperature value, temperature description, location, and switch unit button -->
         <div class="weather-container">
             <div class="weather-icon">
                 <img src="icons/unknown.png" alt="">
@@ -38,14 +34,9 @@
             <div class="location">
                 <p>-</p>
             </div>
-             <!-- Toggle button -->
              <button id="toggle-unit">Switch Unit</button>
-
         </div>
     </div>
-    
     <script src="app.js"></script>
 </body>
 </html>
-
-

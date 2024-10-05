@@ -33,13 +33,13 @@ body {
 }
 
 .weather-icon img {
-    width: 120px; /* Larger icon */
+    width: 120px; 
     margin-bottom: 15px;
 }
 
 .temperature-value p {
-    font-size: 56px; /* Bigger temperature text */
-    color: #ffffff; /* Change temperature color */
+    font-size: 56px;
+    color: #ffffff; 
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -90,7 +90,6 @@ body {
     margin-right: 10px;
 }
 
-/* Change border color on focus */
 #city-input:focus {
     border-color: #0a7ef2; /* Change border color when focused */
 }
