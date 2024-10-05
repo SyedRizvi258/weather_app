@@ -15,7 +15,7 @@ const weather = {
 
 // APP CONSTS AND VARS
 const KELVIN = 273;
-const backendUrl = "https://weather-app-backend-zvr5.onrender.com/api/weather"; // Your backend API
+const backendUrl = "https://weather-app-backend-zvr5.onrender.com/api/weather";
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if ('geolocation' in navigator) {
@@ -41,7 +41,7 @@ function showError(error) {
 
 // GET WEATHER FROM BACKEND (BY LATITUDE & LONGITUDE)
 function getWeather(latitude, longitude) {
-    let api = `${backendUrl}?lat=${latitude}&lon=${longitude}`; // Call your backend API
+    let api = `${backendUrl}?lat=${latitude}&lon=${longitude}`; 
 
     fetch(api)
         .then(response => response.json())
