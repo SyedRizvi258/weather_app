@@ -15,7 +15,7 @@ const weather = {
 
 // APP CONSTS AND VARS
 const KELVIN = 273;
-const key = "82005d27a116c2880c8f0fcb866998a0";
+const backendUrl = "https://weather-app-backend-zvr5.onrender.com/api/weather"; // Your backend API
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if ('geolocation' in navigator) {
@@ -39,22 +39,26 @@ function showError(error) {
     document.getElementById("retry").style.display = "block";
 }
 
-// GET WEATHER FROM API PROVIDER (BY LATITUDE & LONGITUDE)
+// GET WEATHER FROM BACKEND (BY LATITUDE & LONGITUDE)
 function getWeather(latitude, longitude) {
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    
+    let api = `${backendUrl}?lat=${latitude}&lon=${longitude}`; // Call your backend API
+
     fetch(api)
         .then(response => response.json())
         .then(data => {
             setWeatherData(data);
             displayWeather();
+        })
+        .catch(error => {
+            notificationElement.style.display = "block";
+            notificationElement.innerHTML = `<p>${error.message}</p>`;
         });
 }
 
 // GET WEATHER BY CITY NAME
 function getWeatherByCity(city) {
-    let api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
-    
+    let api = `${backendUrl}?city=${city}`; // Call your backend API
+
     fetch(api)
         .then(response => {
             if (!response.ok) throw new Error("City not found");
