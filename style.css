@@ -1,0 +1,126 @@
+* {
+    font-family: "Rimouski", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rimouski', sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #2980b9); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white container */
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+}
+
+.app-title p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.weather-icon img {
+    width: 120px; /* Larger icon */
+    margin-bottom: 15px;
+}
+
+.temperature-value p {
+    font-size: 56px; /* Bigger temperature text */
+    color: #ffffff; /* Change temperature color */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.temperature-value span {
+    font-size: 24px;
+}
+
+.temperature-description p {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.location p {
+    font-size: 16px;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.notification {
+    margin-top: 15px;
+    background-color: #ffcc00;
+    color: #ffffff;
+    padding: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+.notification p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.search-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center elements horizontally */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+#city-input {
+    width: 200px; /* Set a fixed width for the input */
+    padding: 10px; /* Add padding for better touch targets */
+    border: 2px solid #293251; /* Border color */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1em; /* Adjust font size */
+    outline: none; /* Remove default outline */
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Change border color on focus */
+#city-input:focus {
+    border-color: #0a7ef2; /* Change border color when focused */
+}
+
+#get-weather {
+    padding: 10px 15px; 
+    background-color: #0a7ef2;
+    color: #ffffff; /* Button text color */
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#get-weather:hover {
+    background-color: #0a5bb3; 
+}
+
+#toggle-unit {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#toggle-unit:hover {
+    background-color: #45a049;
+}
