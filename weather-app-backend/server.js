@@ -1,10 +1,11 @@
 import fetch from 'node-fetch';
-const express = require('express');
+import express from 'express';
+import dotenv from 'dotenv';
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Load environment variables
-require('dotenv').config();
+dotenv.config();
 
 // Proxy route to get weather data
 app.get('/api/weather', async (req, res) => {
