@@ -1,12 +1,16 @@
 import fetch from 'node-fetch';
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Load environment variables
 dotenv.config();
+
+// Use CORS
+app.use(cors());
 
 // Root route
 app.get('/', (req, res) => {
