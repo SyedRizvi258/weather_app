@@ -1,5 +1,5 @@
 ## Live Demo: 
-https://weather-app-sr2002.netlify.app
+https://weather-app-su70.onrender.com/
 
 # Weather App (JavaScript) 
 - Developed a dynamic weather application using JavaScript, displaying real-time weather data based on user location and city search.
