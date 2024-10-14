@@ -15,7 +15,7 @@ const weather = {
 
 // APP CONSTS AND VARS
 const KELVIN = 273;
-const backendUrl = "https://weather-app-backend-zvr5.onrender.com/api/weather";
+const backendUrl = "https://weatherapp-production-3d69.up.railway.app/api/weather";
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if ('geolocation' in navigator) {
