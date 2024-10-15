@@ -10,9 +10,7 @@ const port = process.env.PORT || 3000;
 dotenv.config();
 
 // Use CORS
-app.use(cors({
-    origin: 'https://weatherapp-production-acf5.up.railway.app/', 
-}));
+app.use(cors());
 
 // Root route: Simple endpoint to confirm the API is running
 app.get('/', (req, res) => {
