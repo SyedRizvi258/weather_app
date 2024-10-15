@@ -114,6 +114,9 @@ if (toggleUnitButton) {
 if (getWeatherButton) {
     getWeatherButton.addEventListener("click", function () {
         const city = cityInput.value.trim();
+        // Hide the notification initially when the button is clicked
+        notificationElement.style.display = "none";
+
         if (city) {
             getWeatherByCity(city);
         } else {
