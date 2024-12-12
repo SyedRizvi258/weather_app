@@ -1,4 +1,4 @@
-// SELECT ELEMENTS
+// Select elements
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
@@ -13,11 +13,11 @@ const weather = {
     temperature: { unit: "celsius" }
 };
 
-// APP CONSTS AND VARS
+// App constants
 const KELVIN = 273;
 const backendUrl = "https://weather-app-backend-t59s.onrender.com/api/weather";
 
-// CHECK IF BROWSER SUPPORTS GEOLOCATION
+// Check if the browser supports geolocation
 if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(setPosition, showError);
 } else {

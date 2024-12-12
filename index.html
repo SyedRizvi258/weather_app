@@ -9,18 +9,21 @@
 
 <body>
     <div class="container">
+        <!-- App title -->
         <div class="app-title">
             <p>SkyCast</p>
         </div>
+        <!-- Notification area for error messages and retry button -->
          <div class="notification">
             <p></p>
             <button id="retry" style="display: none;">Retry</button>
         </div>
+        <!-- Search container for city input and weather retrieval button -->
         <div class="search-container">
             <input type="text" id="city-input" placeholder="Enter city name">
             <button id="get-weather">Get Weather</button>
         </div>
-        <!-- Weather container contains: the icon, temperature value, temperature description, location, and switch unit button -->
+        <!-- Weather container contains: the icon, temperature value, temperature description, and location -->
         <div class="weather-container">
             <div class="weather-icon">
                 <img src="icons/unknown.png" alt="">
@@ -34,6 +37,7 @@
             <div class="location">
                 <p>-</p>
             </div>
+            <!-- Button to switch between Celsius and Fahrenheit -->
              <button id="toggle-unit">Switch Unit</button>
         </div>
     </div>
