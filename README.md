@@ -1,5 +1,5 @@
 ## Live Demo: 
-<a href="https://weather-app-c3vw.onrender.com/" target="_blank">Live Demo</a>
+https://weather-app-c3vw.onrender.com/
 
 # Weather App (JavaScript) 
 - Developed a dynamic JavaScript weather app, displaying real-time data based on user location and city search.
